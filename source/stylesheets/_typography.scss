@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+$heading: 'lato', sans-serif;
+$text: 'lato', sans-serif;
+
+a, p, span, label, li {
+	font-family: $text;
+	font-weight: 300;
+}
+
+.heading {
+  font-family: $heading;
+  font-weight: 700;
+  margin: 5px;
+  text-align: center;
+	&.thin {
+		font-weight: 100
+	}
+}
+
+h1 {
+	@extend .heading;
+	font-size: 2.2em
+}
+h2 {
+	@extend .heading;
+	font-size: 1.5em
+}
+h3 {
+	@extend .heading;
+	font-size: 1.2em
+}
+h4 {
+	@extend .heading;
+	font-size: 1em
+}
+
+.subheading {
+  font-family: $text;
+  font-weight: 300;
+  font-style: italic;
+  margin: 5px;
+  text-align: center;
+  &.large {
+  	font-size: 2em;
+  }
+  &.medium {
+  	font-size: 1.5em
+  }
+  &.minor {
+  	font-size: 1.2em;
+  }
+  &.bold {
+  	font-weight: bold;
+  }
+}

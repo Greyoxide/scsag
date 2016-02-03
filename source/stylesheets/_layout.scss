@@ -1,0 +1,115 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  background-color: $page;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.image {
+	img{
+		width: 100%;
+	}
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	.title {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+    width: 100%;
+    padding: 150px 50px;
+    background-color: rgba(0, 0, 0, .3);
+    * {
+      color: white;
+    }
+	}
+}
+
+ul {
+  list-style: none;
+}
+
+
+.container {
+  margin: 20px auto;
+  max-width: 1600px;
+}
+
+.wrapper {
+  padding-top: 20px;
+  &.dark {
+    background-color: darken($page, 5%)
+  }
+}
+
+.block-span {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.feature {
+	text-align: center;
+	padding: 20px;
+	margin: 10px auto;
+	max-width: 1000px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  .cell {
+    display: inline-block;
+    &.pad {
+      padding: 50px;
+      @include phone {
+        padding: 5px;
+      }
+    }
+  }
+  .v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .qtr {
+    flex: 1 0 25%;
+    @include tablet {flex: 1 0 50%};
+    @include phone {flex: 1 0 100%};
+  }
+  .third {
+    flex: 1 0 33.33%;
+    @include tablet {flex: 1 0 50%};
+    @include phone {flex: 1 0 100%};
+  }
+  .two-thirds {
+    flex: 1 0 66.66%;
+    @include tablet {flex: 1 0 75%};
+    @include phone {flex: 1 0 100%};
+  }
+  .half {
+    flex: 1 0 50%;
+    @include phone {flex: 1 0 100%};
+  }
+  .three-qtr {
+    flex: 1 0 75%;
+    @include phone {flex: 1 0 75%};
+  }
+  .full {
+    flex: 1 0 100%;
+    @include phone {flex: 1 0 100%};
+  }
+}

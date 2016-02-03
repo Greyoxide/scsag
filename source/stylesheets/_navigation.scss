@@ -1,0 +1,55 @@
+#navigation {
+	background-color: rgba(255, 255, 255, 0.95);
+	height:50px;
+	width: 100%;
+	position: fixed;
+	padding: 0 20px;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	#logo {
+		display: inline-block;
+		height: 50px;
+		padding: 10px;
+		img {
+			height: 100%;
+		}
+	}
+
+	nav {
+		display: inline-block;
+		list-style: none;
+		@include phone {display: none;}
+		li {
+			display: inline-block;
+			a {
+				line-height: 50px;
+				padding: 0 20px;
+				color: $primary;
+				display: block;
+				text-decoration: none;
+				&:hover {
+					background-color: $primary;
+					color: white;
+				}
+			}
+		}
+	}
+
+	#hamburger-helper {
+		margin-top: 21px;
+		#hamburger {
+		cursor: pointer;
+		@include burger(25px, 3px, 5px, #222);
+		&.active {
+			@include burger-to-cross;
+		}
+			@include desktop {display: none;}
+			@include tablet {display: none;}
+		}
+	}
+}
+	
