@@ -1,0 +1,328 @@
+/**
+ * Select parts of the burger
+ */
+/**
+ * Burger animations
+ */
+/* Colors */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+/* line 6, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+a, p, span, label, li {
+  font-family: "lato", sans-serif;
+  font-weight: 300; }
+
+/* line 11, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+.heading, h1, h2, h3, h4 {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  margin: 5px;
+  text-align: center; }
+  /* line 16, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+  .heading.thin, h1.thin, h2.thin, h3.thin, h4.thin {
+    font-weight: 100; }
+
+/* line 21, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+h1 {
+  font-size: 2.2em; }
+
+/* line 25, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+h2 {
+  font-size: 1.5em; }
+
+/* line 29, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+h3 {
+  font-size: 1.2em; }
+
+/* line 33, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+h4 {
+  font-size: 1em; }
+
+/* line 38, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+.subheading {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  margin: 5px;
+  text-align: center; }
+  /* line 44, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+  .subheading.large {
+    font-size: 2em; }
+  /* line 47, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+  .subheading.medium {
+    font-size: 1.5em; }
+  /* line 50, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+  .subheading.minor {
+    font-size: 1.2em; }
+  /* line 53, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_typography.scss */
+  .subheading.bold {
+    font-weight: bold; }
+
+/* line 1, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+/* line 7, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+html {
+  background-color: #f4f4f4; }
+
+/* line 11, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+div {
+  box-sizing: border-box; }
+
+/* line 16, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.image img {
+  width: 100%; }
+
+/* line 21, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  /* line 26, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .hero .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 50px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    /* line 34, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+    .hero .title * {
+      color: white; }
+
+/* line 40, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+ul {
+  list-style: none; }
+
+/* line 45, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.container {
+  margin: 20px auto;
+  max-width: 1600px; }
+
+/* line 50, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.wrapper {
+  padding-top: 20px; }
+  /* line 52, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .wrapper.dark {
+    background-color: #e7e7e7; }
+
+/* line 57, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.block-span {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+/* line 62, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.feature {
+  text-align: center;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 1000px; }
+
+/* line 69, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch; }
+  /* line 74, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .cell {
+    display: inline-block; }
+    /* line 76, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+    .grid .cell.pad {
+      padding: 50px; }
+      @media (max-width: 767px) {
+        /* line 76, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+        .grid .cell.pad {
+          padding: 5px; } }
+  /* line 83, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  /* line 88, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .qtr {
+    flex: 1 0 25%; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 88, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .qtr {
+        flex: 1 0 50%; } }
+    @media (max-width: 767px) {
+      /* line 88, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .qtr {
+        flex: 1 0 100%; } }
+  /* line 93, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .third {
+    flex: 1 0 33.33%; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 93, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .third {
+        flex: 1 0 50%; } }
+    @media (max-width: 767px) {
+      /* line 93, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .third {
+        flex: 1 0 100%; } }
+  /* line 98, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .two-thirds {
+    flex: 1 0 66.66%; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 98, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .two-thirds {
+        flex: 1 0 75%; } }
+    @media (max-width: 767px) {
+      /* line 98, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .two-thirds {
+        flex: 1 0 100%; } }
+  /* line 103, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .half {
+    flex: 1 0 50%; }
+    @media (max-width: 767px) {
+      /* line 103, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .half {
+        flex: 1 0 100%; } }
+  /* line 107, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .three-qtr {
+    flex: 1 0 75%; }
+    @media (max-width: 767px) {
+      /* line 107, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .three-qtr {
+        flex: 1 0 75%; } }
+  /* line 111, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+  .grid .full {
+    flex: 1 0 100%; }
+    @media (max-width: 767px) {
+      /* line 111, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_layout.scss */
+      .grid .full {
+        flex: 1 0 100%; } }
+
+/* line 1, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+#navigation {
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  /* line 13, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+  #navigation #logo {
+    display: inline-block;
+    height: 50px;
+    padding: 10px; }
+    /* line 17, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+    #navigation #logo img {
+      height: 100%; }
+  /* line 22, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+  #navigation nav {
+    display: inline-block;
+    list-style: none; }
+    @media (max-width: 767px) {
+      /* line 22, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+      #navigation nav {
+        display: none; } }
+    /* line 26, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+    #navigation nav li {
+      display: inline-block; }
+      /* line 28, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+      #navigation nav li a {
+        line-height: 50px;
+        padding: 0 20px;
+        color: #EF233C;
+        display: block;
+        text-decoration: none; }
+        /* line 34, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+        #navigation nav li a:hover {
+          background-color: #EF233C;
+          color: white; }
+  /* line 42, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+  #navigation #hamburger-helper {
+    margin-top: 21px; }
+    /* line 44, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+    #navigation #hamburger-helper #hamburger {
+      cursor: pointer;
+      position: relative;
+      margin-top: 8px;
+      margin-bottom: 8px; }
+      /* line 38, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger, #navigation #hamburger-helper #hamburger:before, #navigation #hamburger-helper #hamburger:after {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #222;
+        -webkit-transition-property: background-color, -webkit-transform;
+        -moz-transition-property: background-color, -moz-transform;
+        -o-transition-property: background-color, -o-transform;
+        transition-property: background-color, transform;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
+      /* line 58, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger:before, #navigation #hamburger-helper #hamburger:after {
+        position: absolute;
+        content: ""; }
+      /* line 63, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger:before {
+        top: -8px; }
+      /* line 67, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger:after {
+        top: 8px; }
+      /* line 107, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger.active {
+        background-color: transparent; }
+      /* line 110, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger.active:before {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        -moz-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+        -o-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg); }
+      /* line 117, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_mixins.scss */
+      #navigation #hamburger-helper #hamburger.active:after {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -moz-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        -o-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg); }
+      @media (min-width: 1024px) {
+        /* line 44, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+        #navigation #hamburger-helper #hamburger {
+          display: none; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        /* line 44, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_navigation.scss */
+        #navigation #hamburger-helper #hamburger {
+          display: none; } }
+
+/* line 1, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+.hero {
+  background-image: url("/images/back.jpg");
+  background-position: center;
+  background-size: cover; }
+  /* line 6, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  .hero .title h1 {
+    margin: 0; }
+
+/* line 12, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+ul {
+  padding: 0; }
+  /* line 14, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  ul li {
+    margin-bottom: 3px; }
+    /* line 16, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+    ul li p {
+      width: 49%;
+      display: inline-block;
+      margin: 0; }
+      /* line 20, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+      ul li p:last-of-type {
+        text-align: right; }
+
+/* line 28, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+#footer .cell {
+  padding: 30px; }
