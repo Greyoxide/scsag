@@ -4,52 +4,80 @@ title: South Coast Saw and Garden
 
 .hero
   .title
-    h1 South Coast
-    h1.thin Saw & Garden
-    h3.subheading Serving southern Oregon for more than 30 years.
+    .image
+      = image_tag "logoW.png"
     
-.wrapper.dark
-  .feature
-    h2 Local and proud of it
-    p We are a supplier you can you can trust, one who honestly cares about you and your needs. We know what it's like to have your equipment fail when you need it most.  That's why we carefully select only the highest quality, most reliable tools and equipment.  When your future depends on your equipment come see us.
-  
 .wrapper
   .feature
+    h2 Local and proud of it
+    p We are a supplier you can trust, one who honestly cares about you and your needs. We know what it's like to have your equipment fail when you need it most. That's why we carefully select only the highest quality, most reliable tools and equipment. When your future depends on your equipment come see us.
+  
+.wrapper#hills
+  .inner
     .grid
       .cell.third.pad
+        .icon
+          = image_tag "saw.png"
         h4 Stihl Chainsaws
         p We've tried all of the saws on the market.  Stihl makes the most reliable saw we've encountered.  We stock a variety of Stihl chainsaws and home and garden power tools.
       .cell.third.pad
+        .icon
+          = image_tag "Clothes.png"
         h4 Clothing
-        p You need your clothing to hold out all day.  That's why we carry a full line of Prison Blues clothing.  All carefully selected for reliability and longevity.
+        p You need your clothing to hold out all day.  That's why we carry a diverse sellection of Prison Blues work clothing.  All carefully selected for reliability and longevity.
       .cell.third.pad
+        .icon
+          = image_tag "hat.png"
         h4 Gear
         p You can find it here.  We know what it takes to keep your operation going.  Here, you can find everything from fuel cans and bar oil to hats and sharpening files.
-        
-.wrapper#footer.dark
-  .grid
-    .cell.third
-      h3 Come see us today
-      h4
-        | (541) 290-1070
+    .inner#inventory
       .grid
-        .cell.half
-          h3 Address:
-          ul
-            li 1120 S Broadway
-            li Coos Bay, Or
-            li 97420
+        .cell.three-qtr
+          h3 Checkout our Stihl Inventory
+        .cell.qtr
+          = link_to "https://southcoastsawandgarden.stihldealer.net/" do
+            = image_tag "stihl.png"
+        
+.wrapper
+  .feature
+    h2 This is 80 years
+    p Hi we're Sheri Lynn Woolcock and Curt Coffman.  Together, we have more than 80 years of experience serving the local timber industry.  We started South Coast Saw and Garden in 1981, and we've enjoyed every minute of it.  Sure, there've been difficult points, but our greatest joy comes from our close friendship with our customers.
+
+    p We've seen our customer's children grow up and become customers themselves.  Looking back now, we fondly remember all of our customers.  We've been with you through the good times and the bad.  Like you, we've tied our entire future to the local timber industry.  We were there when the spotted owl dealt us a blow.  We were there when the 2008 market crash hit us.  We've been with you every step of the way.
+
+    p Here, you can find a supplier who takes you seriously.  One who knows what its like to brave the odds.  We know you need you're gear and equipment to hold out.  That's why we carry gear and equipment which has been tested against the harshest conditions.  If there's even the slightest doubt, we wont carry it.  We stand behind our reputation.
+
+
+        
+.wrapper#footer
+  .grid
+    .cell.qtr
+      h2 Hours
+      ul
+        - ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].each do |wk|
+          li 
+            p 
+              = wk
+            - unless wk == "Saturday"
+              p 9am - 6pm
+            - else
+              p 9am - 4pm
+    .cell.qtr
+      h2 Address:
+      ul
+        li 1120 S Broadway
+        li Coos Bay, Or
+        li 97420
             
-        .cell.half#info
-          h3 Hours:
-          ul
-            - ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].each do |wk|
-              li 
-                p 
-                  = wk
-                p 9am - 6pm
+    .cell.qtr
+      h3 Phone
+      p
+        | (541) 269-5805
+      h3 Email
+      = mail_to "sawshop541@gmail.com"
           
-    .cell.two-thirds
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.9943070903164!2d-124.21508678451183!3d43.35622967913254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c38690e638c843%3A0x732790839794e666!2s1120+S+Broadway%2C+Coos+Bay%2C+OR+97420!5e0!3m2!1sen!2sus!4v1454529673291" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+    .qtr
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.9943070903164!2d-124.21508678451183!3d43.35622967913254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c38690e638c843%3A0x732790839794e666!2s1120+S+Broadway%2C+Coos+Bay%2C+OR+97420!5e0!3m2!1sen!2sus!4v1454529673291" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
     
         

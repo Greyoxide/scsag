@@ -1,12 +1,51 @@
 .hero {
-	background-image: url('/images/back.jpg');
+	background-image: url('/images/back.png');
 	background-position: center;
 	background-size: cover;
 	.title {
-		h1 {
-			margin: 0;
+		background-color: rgba(158, 37, 0, 0.5);
+		.image {
+			max-width: 300px;
+			margin: auto;
+			padding: 100px 0;
 		}
 	}
+}
+
+#hills {
+	background-image: url('/images/hills.png');
+	background-position: center;
+	background-size: cover;
+	padding: 0;
+	.inner {
+		background-color: rgba(0,0,0, .35);
+		padding: 20px 0 0 0;
+		#inventory {
+			padding: 20px 0;
+			h3 {
+				text-align: left;
+				line-height: 75px;
+				margin: 0;
+				@include phone {
+					display: none;
+				}
+			}
+			@include phone {
+				* {
+					text-align: center;
+				}
+			}
+		}
+		.icon {
+			max-width: 116px;
+			margin: auto;
+		}
+		h4 {
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+	* {color: white;}
 }
 
 ul {
@@ -24,7 +63,25 @@ ul {
 	}
 }
 
+.grid {
+	max-width: 1000px;
+	margin: auto;
+	@include phone {
+		padding: 20px;
+	}
+	.cell {
+		&.pad {
+      padding: 50px;
+      @include phone {
+        padding: 5px;
+      }
+    }
+	}
+}
+
 #footer {
+	background-color: #011F32;
+	*{color: $page;}
 	.cell {
 		padding: 30px;
 	}
