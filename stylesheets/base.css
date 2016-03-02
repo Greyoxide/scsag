@@ -309,59 +309,62 @@ ul {
           /* line 25, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
           #hills .inner #inventory h3 {
             display: none; } }
-      @media (max-width: 767px) {
-        /* line 34, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
-        #hills .inner #inventory * {
-          text-align: center; } }
-    /* line 39, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+        @media (min-width: 768px) and (max-width: 1023px) {
+          /* line 25, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+          #hills .inner #inventory h3 {
+            display: none; } }
+      /* line 36, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+      #hills .inner #inventory #s-logo {
+        text-align: center; }
+    /* line 40, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
     #hills .inner .icon {
       max-width: 116px;
       margin: auto; }
-    /* line 43, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+    /* line 44, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
     #hills .inner h4 {
       text-align: center;
       margin-top: 20px; }
-  /* line 48, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  /* line 49, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
   #hills * {
     color: white; }
 
-/* line 51, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+/* line 52, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
 ul {
   padding: 0; }
-  /* line 53, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  /* line 54, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
   ul li {
     margin-bottom: 3px; }
-    /* line 55, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+    /* line 56, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
     ul li p {
       width: 49%;
       display: inline-block;
       margin: 0; }
-      /* line 59, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+      /* line 60, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
       ul li p:last-of-type {
         text-align: right; }
 
-/* line 66, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+/* line 67, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
 .grid {
   max-width: 1000px;
   margin: auto; }
   @media (max-width: 767px) {
-    /* line 66, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+    /* line 67, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
     .grid {
       padding: 20px; } }
-  /* line 73, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  /* line 74, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
   .grid .cell.pad {
     padding: 50px; }
     @media (max-width: 767px) {
-      /* line 73, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+      /* line 74, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
       .grid .cell.pad {
         padding: 5px; } }
 
-/* line 82, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+/* line 83, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
 #footer {
   background-color: #011F32; }
-  /* line 84, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  /* line 85, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
   #footer * {
     color: #E8E7E6; }
-  /* line 85, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
+  /* line 86, /Users/forrest/Projects/static/sawandgarden/source/stylesheets/_style.scss */
   #footer .cell {
     padding: 30px; }
