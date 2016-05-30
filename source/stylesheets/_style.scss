@@ -1,5 +1,5 @@
 .hero {
-	background-image: url('/images/back.png');
+	background-image: url('/images/back.jpg');
 	background-position: center;
 	background-size: cover;
 	.title {
@@ -29,11 +29,12 @@
 				@include phone {
 					display: none;
 				}
-			}
-			@include phone {
-				* {
-					text-align: center;
+				@include tablet {
+					display: none;
 				}
+			}
+			#s-logo {
+				text-align: center;
 			}
 		}
 		.icon {
