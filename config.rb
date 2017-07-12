@@ -55,6 +55,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-102493325-1' # Replace with your property ID.
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
