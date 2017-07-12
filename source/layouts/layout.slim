@@ -5,17 +5,12 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = current_page.data.title || "Bluebird Pizza"
-    == stylesheet_link_tag "https://fonts.googleapis.com/css?family=Lato|Varela+Round"
-    == stylesheet_link_tag :bluebird
+    title = current_page.data.title || "South Coasth Saw and Garden"
+    == stylesheet_link_tag :base
 
 
   body class="#{page_classes}"
-    = partial "/partials/navigation"
-    = partial "/partials/menu"
-    #page
-      == yield
-    = partial "/partials/footer"
+    == yield
     = google_analytics_tag
 
     == javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"
