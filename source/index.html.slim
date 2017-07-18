@@ -35,7 +35,7 @@ title: South Coast Saw and Garden | (541) 269-5805
         .cell.three-qtr
           h3 Checkout our Stihl Inventory
         .cell.qtr#s-logo
-          = link_to "https://southcoastsawandgarden.stihldealer.net/" do
+          = link_to "https://southcoastsawandgarden.stihldealer.net/", data: {label: "shop"} do
             = image_tag "stihl.png"
 
 .wrapper
@@ -71,8 +71,7 @@ title: South Coast Saw and Garden | (541) 269-5805
 
     .cell.qtr
       h3 Phone
-      p
-        | (541) 269-5805
+      = link_to "(541) 269-5805", "tel:541-269-5805", data: {label: "Phone call"}
       h3 Email
       = mail_to "sawshop541@gmail.com"
 
